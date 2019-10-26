@@ -1,0 +1,26 @@
+<?php
+/**
+ * Copyright © mageOn, 2019.
+ * https://github.com/mageonius
+ */
+
+/** @var \Magento\Backend\Block\Template $block */
+
+use Mageon\AdvancedCatalogImport\ViewModel\ImportFormJs;
+use Mageon\AdvancedCatalogImport\ViewModel\JsonSerializer;
+
+/** @var JsonSerializer $jsonSerializer */
+$jsonSerializer = $block->getJsonSerializer();
+/** @var ImportFormJs $viewModel */
+$viewModel = $block->getViewModel();
+if ($viewModel->isModuleEnabled()) : ?>
+    <script type="text/x-magento-init">
+    <?= $jsonSerializer->serialize([
+            '#entity' => [
+                'Mageon_AdvancedCatalogImport/js/import-form-js' => [
+                    'fieldsetId' => $block->escapeHtmlAttr($viewModel->getFieldsetId())
+                ]
+            ]
+        ]) ?>
+    </script>
+<?php endif; ?>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright © mageOn, 2019.
+  ~ https://github.com/mageonius
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="mageon.advanced_catalog_import.products_import_form_js" class="Magento\Backend\Block\Template"
+                   template="Mageon_AdvancedCatalogImport::products_import_form_js.phtml" after="form_before">
+                <arguments>
+                    <argument name="json_serializer" xsi:type="object">Mageon\AdvancedCatalogImport\ViewModel\JsonSerializer</argument>
+                    <argument name="view_model" xsi:type="object">Mageon\AdvancedCatalogImport\ViewModel\ImportFormJs</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

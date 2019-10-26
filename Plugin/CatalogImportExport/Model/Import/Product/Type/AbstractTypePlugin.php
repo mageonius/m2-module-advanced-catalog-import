@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace Mageon\AdvancedCatalogImport\Plugin\Model\Import\Product\Type;
+namespace Mageon\AdvancedCatalogImport\Plugin\CatalogImportExport\Model\Import\Product\Type;
 
 use Magento\Catalog\Api\ProductAttributeOptionManagementInterface;
 use Magento\CatalogImportExport\Model\Import\Product as ImportProduct;
@@ -17,7 +17,7 @@ use Mageon\AdvancedCatalogImport\Helper\Data;
 
 /**
  * Class AbstractTypePlugin
- * @package Mageon\AdvancedCatalogImport\Plugin\Model\Import\Product\Type
+ * @package Mageon\AdvancedCatalogImport\Plugin\CatalogImportExport\Model\Import\Product\Type
  */
 class AbstractTypePlugin
 {

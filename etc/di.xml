@@ -9,7 +9,12 @@
                 type="Mageon\AdvancedCatalogImport\Model\Import\Product\Validator"/>
 
     <type name="Magento\CatalogImportExport\Model\Import\Product\Type\AbstractType">
-        <plugin name="mageonAdvancedCatalogImportAbstractType"
-                type="Mageon\AdvancedCatalogImport\Plugin\Model\Import\Product\Type\AbstractTypePlugin"/>
+        <plugin name="MageonAdvancedCatalogImportAbstractTypePlugin"
+                type="Mageon\AdvancedCatalogImport\Plugin\CatalogImportExport\Model\Import\Product\Type\AbstractTypePlugin"/>
+    </type>
+
+    <type name="Magento\ImportExport\Block\Adminhtml\Import\Edit\Form">
+        <plugin name="MageonAdvancedCatalogImportFormPlugin"
+                type="Mageon\AdvancedCatalogImport\Plugin\ImportExport\Block\Adminhtml\Import\Edit\FormPlugin"/>
     </type>
 </config>

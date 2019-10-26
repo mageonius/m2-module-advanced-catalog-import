@@ -4,8 +4,8 @@ This module extends functionality of defualt Magento 2 CatalogImportExport modul
 
 ## Module features
 
--  Add new options during import to select and multiselect attributes;
--  Set "1" and "0" values to boolean attributes as an alternative to Yes/No.
+-  Add new options during products import to select and multiselect attributes;
+-  Set "1" and "0" values to boolean attributes as an alternative to Yes/No during products import.
 
 ## Supported Magento 2 versions
 
