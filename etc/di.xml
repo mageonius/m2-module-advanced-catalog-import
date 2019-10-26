@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright © mageOn, 2019.
+  ~ https://github.com/mageonius
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\CatalogImportExport\Model\Import\Product\Validator"
+                type="Mageon\AdvancedCatalogImport\Model\Import\Product\Validator"/>
+
+    <type name="Magento\CatalogImportExport\Model\Import\Product\Type\AbstractType">
+        <plugin name="mageonAdvancedCatalogImportAbstractType"
+                type="Mageon\AdvancedCatalogImport\Plugin\Model\Import\Product\Type\AbstractTypePlugin"/>
+    </type>
+</config>
