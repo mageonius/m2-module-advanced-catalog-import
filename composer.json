@@ -1,5 +1,5 @@
 {
-    "name": "mageonius/module-advanced-catalog-import",
+    "name": "mageonius/m2-module-advanced-catalog-import",
     "description": "This module extends functionality of defualt Magento 2 CatalogImportExport module.",
     "require": {
         "php": "~7.1.3|~7.2.0",
